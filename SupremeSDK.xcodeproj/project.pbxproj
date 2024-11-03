@@ -11,6 +11,7 @@
 		97C77F0F2CD70550007C805A /* SupremeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C77F042CD70550007C805A /* SupremeSDK.framework */; };
 		97C77F142CD70550007C805A /* SupremeSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C77F132CD70550007C805A /* SupremeSDKTests.swift */; };
 		97C77F152CD70550007C805A /* SupremeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C77F072CD70550007C805A /* SupremeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97C77F1F2CD705A9007C805A /* SecretHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C77F1E2CD705A9007C805A /* SecretHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		97C77F082CD70550007C805A /* SupremeSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SupremeSDK.docc; sourceTree = "<group>"; };
 		97C77F0E2CD70550007C805A /* SupremeSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SupremeSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C77F132CD70550007C805A /* SupremeSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupremeSDKTests.swift; sourceTree = "<group>"; };
+		97C77F1E2CD705A9007C805A /* SecretHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		97C77EFA2CD70550007C805A = {
 			isa = PBXGroup;
 			children = (
+				97C77F1E2CD705A9007C805A /* SecretHolder.swift */,
 				97C77F062CD70550007C805A /* SupremeSDK */,
 				97C77F122CD70550007C805A /* SupremeSDKTests */,
 				97C77F052CD70550007C805A /* Products */,
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C77F092CD70550007C805A /* SupremeSDK.docc in Sources */,
+				97C77F1F2CD705A9007C805A /* SecretHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +372,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hg.ai.SupremeSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
@@ -401,6 +409,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hg.ai.SupremeSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
@@ -411,6 +423,7 @@
 		97C77F1C2CD70550007C805A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9K5PBHG2LF;
@@ -427,6 +440,7 @@
 		97C77F1D2CD70550007C805A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9K5PBHG2LF;
